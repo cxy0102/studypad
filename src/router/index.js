@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
-import Login from '@/view/Login/index'
+import Login from '@/view/Main/index'
 
 Vue.use(Router)
 
