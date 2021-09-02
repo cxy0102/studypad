@@ -12,8 +12,9 @@
       <span>组工业务综合查询系统</span>
     </div>
       <van-grid clickable  :gutter="20" :column-num="3" class="van-grid-items">
-        <van-grid-item icon="friends-o" text="干部信息"  />
-        <van-grid-item icon="search" text="干部搜索"  />
+        <van-grid-item icon="friends-o" text="干部信息" to="main2" />
+        <van-grid-item icon="search" text="干部搜索"  to="search"/>
+        <van-grid-item icon="search" text="测试"  to="login/main"/>
         <van-grid-item v-for="value in 17" :key="value" icon="photo-o" text="文字" />
       </van-grid>
   </div>
