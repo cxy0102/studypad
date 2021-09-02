@@ -6,7 +6,7 @@
  * @CreateDate 2021/9/2 9:18
 -->
 <template>
-  <div>
+  <div class="main_body">
     <main-nabar :ctitle="titleStr"></main-nabar>
     <router-view></router-view>
     <main-tabbar @tbclick="mnclick"></main-tabbar>
@@ -39,5 +39,7 @@ export default {
 </script>
 
 <style scoped>
-
+  .main_body{
+    background-color: #fff;
+  }
 </style>

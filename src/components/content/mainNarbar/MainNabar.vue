@@ -26,10 +26,10 @@ export default {
   ],
   methods: {
     onClickLeft() {
-      Toast('返回');
+
     },
     onClickRight() {
-      Toast('按钮');
+
     },
   }
 }
