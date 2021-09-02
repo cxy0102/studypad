@@ -32,6 +32,8 @@
 </template>
 
 <script>
+import {getDatabase} from '@/network/cadre'
+
 export default {
   name: "DbSearch",
   data() {
@@ -40,6 +42,8 @@ export default {
       show: false,
       fieldValue: '杭州',
       value: '',
+      str:[],
+      strs:[]
     };
   },
   methods: {
@@ -54,6 +58,19 @@ export default {
     onCancel() {
       this.show=false;
     }
+  },created() {
+    getDatabase().then(res=>{
+      this.str=res;
+      console.log(res);
+      console.log('存储：'+this.str);
+      console.log('长度：'+this.str.length);
+
+      for (let item in this.str) {
+         //console.log('数据：'+item.toString());
+        //this.strs.push(item.InpFrq)
+      }
+      //console.log('数据：'+this.strs);
+    })
   }
 }
 </script>
